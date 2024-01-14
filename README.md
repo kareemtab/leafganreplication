@@ -14,7 +14,9 @@ This is a project for the course of Deep Learning at Istanbul Technical Universi
 3- LFLSeg could then be tested on indiviidual pictures by first uploading the model to the infer_LFLSeg.py file on line 84 by modifying the path of the saved trained LFLSeg model. We should navigate to the directory (PlantProject\LeafGAN-master\LFLSeg) from conda terminal and run:
 
   python infer_LFLSeg.py  --input images/leaf_01.jpg --threshold 0.35 --segment
+  
   or
+  
   python infer_LFLSeg.py  --input images/leaf_01.jpg --threshold 0.35
 
   Note the differnce between the 2 is that the first produces a masked picture but without a heatmap segmentation. The 2nd produces a heatmap segmentation. The produced files are saved in the output folder inside the LFLSeg directory. A model has been already uploaded to the infer_LFLSeg.py file.
@@ -23,9 +25,11 @@ This is a project for the course of Deep Learning at Istanbul Technical Universi
 
 Training:
   python train.py --dataroot datasets/ --name healthy2s
+  
   Note: you could replace the healthy2s with any other name.
 
 Testing:
   python train.py --dataroot datasets/ --name healthy2s
+  
   Note: name parameter should match to the one chosen at training or it will give an error of not finding a directory or a model error.
   
