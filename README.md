@@ -19,4 +19,13 @@ This is a project for the course of Deep Learning at Istanbul Technical Universi
 
   Note the differnce between the 2 is that the first produces a masked picture but without a heatmap segmentation. The 2nd produces a heatmap segmentation. The produced files are saved in the output folder inside the LFLSeg directory. A model has been already uploaded to the infer_LFLSeg.py file.
 
-4- 
+4- Training LeafGAN and Testing LeafGAN: this should be done on the conda terminal by navigating to the training file terminal and writing the following command:
+
+Training:
+  python train.py --dataroot datasets/ --name healthy2s
+  Note: you could replace the healthy2s with any other name.
+
+Testing:
+  python train.py --dataroot datasets/ --name healthy2s
+  Note: name parameter should match to the one chosen at training or it will give an error of not finding a directory or a model error.
+  
