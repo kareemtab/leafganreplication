@@ -3,7 +3,7 @@ A Semi-Replication of LeafGAN for Sick Leaves Identification
 
 This is a project for the course of Deep Learning at Istanbul Technical University. The project aims to replicate the LeafGAN project on our own datasets. 1 of the datasets is for cucumber leaves while the other is for tomato leaves. The cucmber leaves were a combination of images collected via the internet and some images from a dataset (comes from an uncontolled environment), and the tomato leaves come completely from a controlled domain envirnoment dataset
 
-1- Since we have 2 datasets. You can try the demo by either accessing the PlantProject directory (original trial with the gathered cucmber leaves images) or with the PlantProject - Tomatoes directory for the 2nd and 3rd trials on datsets gathered from a dataset found on the internet referenced in the report.  
+Since we have 2 datasets. You can try the demo by either accessing the PlantProject directory (original trial with the gathered cucmber leaves images) or with the PlantProject - Tomatoes directory for the 2nd and 3rd trials on datsets gathered from a dataset found on the internet referenced in the report.  
 
 (The renaming has been already done so there will be no need to check the functionality of the file)
 
@@ -32,4 +32,7 @@ Testing:
   python train.py --dataroot datasets/ --name healthy2s
   
   Note: name parameter should match to the one chosen at training or it will give an error of not finding a directory or a model error.
-  
+
+5- LeafGAN results could be reached for at the checkpoints directory (PlantProject - Tomatoes\LeafGAN-master\checkpoints\(name chosen when training)\web\index.html) for training or at the results directory (PlantProject - Tomatoes\LeafGAN-master\results\(name chosen when training)\test_latest\index.html) for testing.
+
+6- In order to train the Identification model, you can access the jupyter notebook Splitting_Fake_Images_trIdentificationmodel.ipynb to split the datasets and train the identification model and see the results mentioned in the report.
